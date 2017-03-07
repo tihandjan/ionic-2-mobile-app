@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, ViewController } from 'ionic-angular';
 
-import { quotes } from '../../data/quotes.interface';
-
 
 @Component({
   selector: 'page-quote',

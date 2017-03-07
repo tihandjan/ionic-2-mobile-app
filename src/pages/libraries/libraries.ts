@@ -19,4 +19,9 @@ export class LibrariesPage implements OnInit {
     this.quotes = quotesCollection;
   }
 
+  goToQuote(quote) {
+    let opts = { animate: true, animation: "wp-transition", duration: 300};
+    this.navCtrl.push(QuotesPage, quote, opts);
+  }
+
 }
