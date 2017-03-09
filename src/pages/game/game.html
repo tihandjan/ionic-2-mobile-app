@@ -1,0 +1,34 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lets Play</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1 class="code">Enter the right code</h1>
+  <p class="result">{{ won }}</p>
+
+  <ion-list>
+    <button ion-item>Tapped: {{ tapped }}</button>
+    <button ion-item>Presed: {{ pressed }}</button>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+
+      <app-reset (reset)="onReset($event)"></app-reset>
+
+      <ion-col col-6>
+        <button ion-button full color="secondary" (tap)="onTap()">Tap</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button full color="secondary" (press)="onPress()">Press</button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

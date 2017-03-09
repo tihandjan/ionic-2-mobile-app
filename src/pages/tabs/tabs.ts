@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { FavouritesPage } from '../favourites/favourites';
 import { LibrariesPage } from '../libraries/libraries';
+import { GamePage } from '../game/game';
 
 @Component({
     selector: 'page-tabs',
@@ -9,6 +10,7 @@ import { LibrariesPage } from '../libraries/libraries';
         <ion-tabs>
             <ion-tab tabIcon="star" [root]="FavouritesPage"></ion-tab>
             <ion-tab tabIcon="book" [root]="LibrariesPage"></ion-tab>
+            <ion-tab tabIcon="game-controller-b" [root]="GamePage"></ion-tab>
         </ion-tabs>
     `
 })
@@ -16,4 +18,5 @@ import { LibrariesPage } from '../libraries/libraries';
 export class TabsPage {
     FavouritesPage = FavouritesPage;
     LibrariesPage = LibrariesPage;
+    GamePage = GamePage;
 }

@@ -7,6 +7,9 @@ import { FavouritesPage } from '../pages/favourites/favourites';
 import { QuotesPage } from '../pages/quotes/quotes';
 import { QuotePage } from '../pages/quote/quote';
 import { QuoteService } from '../services/quote';
+import { GamePage } from '../pages/game/game';
+import { ResetComponent } from '../components/reset';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,9 @@ import { QuoteService } from '../services/quote';
     LibrariesPage,
     FavouritesPage,
     QuotesPage,
-    QuotePage
+    QuotePage,
+    GamePage,
+    ResetComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +32,8 @@ import { QuoteService } from '../services/quote';
     LibrariesPage,
     FavouritesPage,
     QuotesPage,
-    QuotePage
+    QuotePage,
+    GamePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, QuoteService]
 })
